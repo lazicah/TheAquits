@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_tracker"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Daily Tracker" />
+
+        <item
+            android:id="@+id/nav_Community"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Community" />
+
+        <item
+            android:id="@+id/nav_Training"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Training" />
+
+        <item
+            android:id="@+id/nav_lifestyle"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Lifestyle Metrics"/>
+
+        <item
+            android:id="@+id/nav_wellbeing"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Wellbeing Metrics" />
+
+        <item
+            android:id="@+id/nav_allies"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Allies" />
+
+        <item
+            android:id="@+id/nav_freedom"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Freedom Plan" />
+
+        <item
+            android:id="@+id/nav_journal"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Journal" />
+        <item
+            android:id="@+id/nav_coaching"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Coaching" />
+
+        <item
+            android:id="@+id/nav_suppport"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Support Groups" />
+
+        <item
+            android:id="@+id/nav_webinars"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Webinars"/>
+
+        <item
+            android:id="@+id/nav_awards"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Awards" />
+
+        <item
+            android:id="@+id/nav_resources"
+            android:icon="@drawable/ic_menu_black_24dp"
+            android:title="Resources" />
+
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_black_24dp"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_Customer"
+                android:icon="@drawable/ic_menu_black_24dp"
+                android:title="Customer Support" />
+        </menu>
+    </item>
+
+</menu>

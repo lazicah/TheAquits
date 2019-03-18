@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:banner="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.greaterevangelism.gewcmobile.MainActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:expanded="false"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/background1"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    android:background="@color/colorPrimaryDark"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/expanded_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingRight="14dp"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_menu_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/counter"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/sssss"
+                            android:layout_weight="1"
+                            android:text="00:00"
+                            android:paddingTop="10dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="28dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/inbox"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="14dp"
+                            android:tint="@color/white"
+                            app:srcCompat="@drawable/ic_email_black_24dp" />
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1.0"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="?attr/actionBarSize" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1.0"
+                        android:gravity="center|bottom"
+                        android:paddingBottom="10dp"
+                        android:orientation="horizontal" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/main_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/background4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/dashboard"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="clickAction"
+                        android:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/calendar"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="clickAction"
+                        android:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_today_black_24dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/conversation"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="clickAction"
+                        android:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_chat_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/lessons"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="clickAction"
+                        android:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_play_circle_filled_black_24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:id="@+id/fb"
+            android:onClick="clickAction"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="2dp"
+            app:rippleColor="@color/colorAccent"
+            app:fabCustomSize="70dp"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="300sp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        app:itemBackground="@color/white"
+        app:itemTextAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        app:menu="@menu/activity_main_drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>

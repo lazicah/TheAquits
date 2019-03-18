@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.theacquits.mobile.theaquits.fragments.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tint="@color/white"
+            android:src="@drawable/ic_menu_black_24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background3"
+            android:hint="Email"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:background="@drawable/background3"
+            android:hint="Password" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:background="@drawable/background2"
+                android:textColor="@color/colorAccent"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:background="@drawable/background2"
+                android:textColor="@color/colorAccent"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:layout_margin="16dp"/>
+
+</FrameLayout>

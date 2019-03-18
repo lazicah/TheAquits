@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="28dp"
+        android:hint="Email"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Confirm Password"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+
+
+</LinearLayout>

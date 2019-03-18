@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:textColor="@color/white"
+        android:hint="First Name"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:hint="Last Name"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/date_of_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Date of Birth"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background4"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+
+            android:buttonTint="@color/white"
+            android:text="I am over 13 years old"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
